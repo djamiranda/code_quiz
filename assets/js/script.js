@@ -26,4 +26,14 @@ var questions = [
     },
   ];
 
-  
+var score = 0;
+var questionList = 0;
+var currentTime = document.querySelector("#currentTime");
+var timer = document.querySelector("#startQuiz");
+var questionsSection = document.querySelector("#questionsSection");
+var wrapper = document.querySelector("#wrapper");
+
+var secondsLeft = 60;
+var holdInterval = 0;
+var penalty = 10;
+var ulCreate = document.createElement("ul");
