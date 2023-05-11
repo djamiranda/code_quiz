@@ -102,3 +102,13 @@ timer.addEventListener("click", function () {
     }
     questionsDiv.appendChild(createDiv);
   }
+
+  function allDone() {
+    questionsDiv.innerHTML = "";
+    currentTime.innerHTML = "";
+  
+    var createH1 = document.createElement("h1");
+    createH1.setAttribute("id", "createH1");
+    createH1.textContent = "All Done!";
+  
+    questionsDiv.appendChild(createH1);
