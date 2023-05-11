@@ -112,3 +112,32 @@ timer.addEventListener("click", function () {
     createH1.textContent = "All Done!";
   
     questionsDiv.appendChild(createH1);
+
+    if (secondsLeft >= 0) {
+        var timeRemaining = secondsLeft;
+        var createP = document.createElement("p");
+        clearInterval(holdInterval);
+        createP.textContent = "Your final score is: " + timeRemaining;
+    
+        questionsDiv.appendChild(createP);
+      }
+    
+      var createLabel = document.createElement("label");
+      createLabel.setAttribute("id", "createLabel");
+      createLabel.textContent = "Enter your initials: ";
+    
+      questionsDiv.appendChild(createLabel);
+    
+      var createInput = document.createElement("input");
+      createInput.setAttribute("type", "text");
+      createInput.setAttribute("id", "initials");
+      createInput.textContent = "";
+    
+      questionsDiv.appendChild(createInput);
+    
+      var createSubmit = document.createElement("button");
+      createSubmit.setAttribute("type", "submit");
+      createSubmit.setAttribute("id", "Submit");
+      createSubmit.textContent = "Submit";
+    
+      questionsDiv.appendChild(createSubmit);
