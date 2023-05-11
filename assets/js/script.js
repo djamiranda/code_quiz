@@ -37,3 +37,19 @@ var secondsLeft = 60;
 var holdInterval = 0;
 var penalty = 10;
 var ulCreate = document.createElement("ul");
+
+timer.addEventListener("click", function () {
+    if (holdInterval === 0) {
+      holdInterval = setInterval(function () {
+        secondsLeft--;
+        currentTime.textContent = "Time Left: " + secondsLeft;
+  
+        if (secondsLeft <= 0) {
+          clearInterval(holdInterval);
+          allDone();
+          currentTime.textContent = "Time's up!";
+        }
+      }, 1000);
+    }
+    render(questionList);
+  });
