@@ -70,3 +70,35 @@ timer.addEventListener("click", function () {
       listItem.addEventListener("click", compare);
     });
   }
+
+  function compare(event) {
+    var element = event.target;
+    if (element.matches("li")) {
+      var createDiv = document.createElement("div");
+      createDiv.setAttribute("id", "createDiv");
+      if (element.textContent == questions[questionList].answer) {
+        score++;
+        createDiv.textContent = "Correct!";
+      } else {
+        secondsLeft = secondsLeft - penalty;
+        createDiv.textContent = "Wrong!";
+      }
+    }
+  
+    questionList++;
+  
+    if (questionList >= questions.length) {
+      allDone();
+      createDiv.textContent =
+        "End of quiz!" +
+        " " +
+        "You got  " +
+        score +
+        "/" +
+        questions.length +
+        " Correct!";
+    } else {
+      render(questionList);
+    }
+    questionsDiv.appendChild(createDiv);
+  }
