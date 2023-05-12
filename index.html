@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- added style sheet -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <!-- added title -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
     <title>Code Quiz</title>
-</head>
+  </head>
+</html>
 <body>
-    <a href="viewHighscores.html">View Highscores</a>
-    <section id="wrapper">
-        <section id="Timer"></section>
-        <section id="questionsSection">
-            <h1>Coding Quiz Challenge</h1>
-            <p>Try to answer the following code-related questions within the time
-                limit. Keep in mind that incorrect answers will penalize your
-                score/time by ten seconds!
-            </p>
-            <ul id="choicesUl"></ul>
-            <button id="startQuiz">Start Quiz</button>
-        </section>
-    </section>
-    <script src="assets/js/script.js"></script>
-</body>
+
+    <a href="highscores.html">View Highscores</a>
+    
+    <div id="wrapper">
+      
+      <div id="currentTime"></div>
+     
+      <div id="questionsDiv">
+        <h1>Coding Quiz Challenge</h1>
+        <p>
+          Try to answer the following code-related questions within the time
+          limit. Keep in mind that incorrect answers will penalize your
+          score/time by five seconds!
+        </p>
+        <ul id="choicesUl"></ul>
+        
+        <button id="startTime">Start Quiz</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
