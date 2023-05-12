@@ -1,93 +1,114 @@
+:root {
+    font-family: sans-serif;   
+}
 h1 {
     text-align: center;
+    font-size: 40px;
   }
   p {
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
   }
   
   button {
     border-radius: 8px;
   }
-  
+
   textarea {
     width: 90%;
     margin: 20px;
   }
   
   label {
-    margin-right: 10px;
+    /* margin-right: 10px; */
   }
   input {
     margin-bottom: 20px;
     width: 50%;
     border: 1px solid lightgray;
+    font-size: 20px;
   }
-  
+  /* list item style */
   li {
-    background-color: dodgerblue;
+    background-color: purple;
     margin-top: 10px;
     padding: 5px 15px;
-    width: 80%;
+    width: max-content;
     font-size: 18px;
     color: white;
+    border-radius: 8px;
   }
-  
+/* wrapper style */
   #wrapper {
     position: absolute;
     left: 30%;
     top: 20%;
     width: 500px;
     height: 500px;
-    border: 5px solid dodgerblue;
+    font-weight: bolder;
+    
   }
+  /* start button */
   #startTime {
-    background-color: dodgerblue;
+    background-color: purple;
     margin-left: 33%;
     padding: 15px 32px;
     font-size: 20px;
     color: white;
   }
-  #questionsDiv {
+  /* questions style */
+  #questionsSection {
+    font-size: 24px;
+    font-weight: bold;
     margin: 20px;
   }
   
-  #createDiv {
+  #createSection {
     margin-top: 20px;
     border-top: 1px solid lightgray;
   }
-  
+  /* timer style */
   #currentTime {
-    float: right;
+    font-weight: bolder;
+    text-align: right;
   }
-  
+  /* go back button */
   #goBack {
-    background-color: dodgerblue;
+    background-color: purple;
     position: relative;
     padding: 10px;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     top: 30%;
-    left: 55%;
+    left: 25%;
     width: auto;
     text-align: center;
     text-decoration: none;
   }
-  
+  /* button hover style */
+  #Submit:hover,
+  li:hover,
+  button:hover,
+  #startTime:hover,
+  #clear:hover,
+  #goBack:hover {
+    cursor: pointer;
+    background-color: plum;
+  }
+/* clear button */
   #clear {
-    background-color: dodgerblue;
+    background-color: purple;
     position: relative;
     padding: 10px;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     top: 30%;
-    right: 5%;
+    left: 25%;
     text-align: center;
   }
-  
+  /* submit button */
   #Submit {
-    background-color: dodgerblue;
-    margin-left: 33%;
+    background-color: purple;
+    margin-left: 35%;
     padding: 15px 32px;
     font-size: 20px;
     color: white;
@@ -100,4 +121,4 @@ h1 {
     #wrapper {
       position: absolute;
       left: 20%;
-    }
+    }}

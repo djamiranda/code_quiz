@@ -3,20 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+<!-- challenge title -->
     <title>Code Quiz</title>
   </head>
 </html>
 <body>
-
-    <a href="highscores.html">View Highscores</a>
-    
-    <div id="wrapper">
-      
-      <div id="currentTime"></div>
-     
-      <div id="questionsDiv">
+<!-- highscores link -->
+    <a href="highscores.html" style="font-weight: bold;">View Highscores</a>
+    <!-- timer -->
+    <section id="currentTime"></section>
+    <main id="wrapper">
+     <!--questions section  -->
+      <section id="questionsSection">
         <h1>Coding Quiz Challenge</h1>
         <p>
           Try to answer the following code-related questions within the time
@@ -24,11 +23,14 @@
           score/time by five seconds!
         </p>
         <ul id="choicesUl"></ul>
-        
+        <!-- start button -->
         <button id="startTime">Start Quiz</button>
-      </div>
-    </div>
+    </section>
 
-    <script src="script.js"></script>
+    </main>
+  <!-- scripts  -->
+    <script src="./assets/css/style.css"></script>
+    <script src="./assets/js/highscores.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
